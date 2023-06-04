@@ -1,12 +1,34 @@
 {
-  "name": "webidl",
+  "name": "@jcbhmr/webidl",
   "version": "1.0.0",
   "description": "📚 WebIDL infrastructure for making JavaScript ↔️ JavaScript bindings",
-  "keywords": [],
-  "license": "ISC",
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "polyfill",
+    "utility",
+    "helper",
+    "library",
+    "specification",
+    "webidl"
+  ],
+  "homepage": "https://jcbhmr.github.io/webidl/",
+  "bugs": "https://github.com/jcbhmr/webidl/issues",
+  "repository": "github:jcbhmr/webidl",
+  "license": "MIT",
+  "author": "Jacob Hummer <jcbhmr@outlook.com> (https://jcbhmr.me/)",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*.js": "./dist/*.js",
+    "./internal/*": null
+  },
   "scripts": {
-    "test": "tsc --noEmit && tsx --test **/*.test.ts"
+    "build-docs": "typedoc",
+    "prepack": "tsc",
+    "start": "tsx --test --watch test/*.test.ts test/types/*.test.ts",
+    "pretest": "prettier --ignore-path .gitignore -w .",
+    "test": "tsc --noEmit && tsx --test test/*.test.ts test/types/*.test.ts"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",
