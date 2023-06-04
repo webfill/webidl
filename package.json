@@ -1,6 +1,6 @@
 {
   "name": "@jcbhmr/webidl",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "📚 WebIDL infrastructure for making JavaScript ↔️ JavaScript bindings",
   "keywords": [
     "nodejs",
