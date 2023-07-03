@@ -4,5 +4,4 @@ const undefined_ = {
     return undefined;
   },
 };
-
 export default undefined_;

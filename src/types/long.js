@@ -5,5 +5,4 @@ const long = {
     return Math.trunc(x);
   },
 };
-
 export default long;

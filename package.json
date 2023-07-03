@@ -20,6 +20,12 @@
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
+    "./DOMException.js": {
+      "deno": "./src/DOMException.js",
+      "bun": "./src/DOMException.js",
+      "node": "./src/DOMException-node.js",
+      "default": "./src/DOMException.js"
+    },
     "./*.js": "./dist/*.js",
     "./internal/*": null
   },
